@@ -20,15 +20,30 @@
                 <img src="https://www.seekpng.com/png/detail/1010-10103813_facebook-icon-new-instagram-png-black.png">
             </div>
             <form id="login" class="input-group">
-                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="tel" class="input-field" placeholder="Email/Mobile number" maxlength="10" pattern="[0-9]{10}" required>
                 <input type="text" class="input-field" placeholder="Enter Password" required>
-                <input type="checkbox" class="chech-box"><span>Remember Password</span>
+                <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="forgot-password">
+          							<a href="no-javascript1.html" title="Forgot Password" id="link-reset">Forgot Password?</a>
+        						  </span>-->
+        		<div>
+                	<input type="checkbox" class="chech-box"><span>Remember me</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                	<a href="www.google.com"><span style="color:red;">Forgot password?<span></a>
+                </div>	   
                 <button type="submit" class="submit-btn">Login</button>
             </form>
             <form id="register" class="input-group">
-                <input type="text" class="input-field" placeholder="User Id" required>
-                <input type="email" class="input-field" placeholder="Email Id" required>
-                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <input type="text" class="input-field" placeholder="Mobile number" required>
+                <input type="email" class="input-field" placeholder="Name" required>
+                <input type="email" class="input-field" placeholder="Email" required>
+                <input type="text" class="input-field" placeholder="Password" required>
+                <input type="text" class="input-field" placeholder="Re-enter Password" required>
+                <!--<select name="boolean" id="boolean">
+                			    <option value="Yes">Yes</option>
+    							<option value="No">No</option>
+                </select>
+            </br>-->
                 <input type="checkbox" class="chech-box" required><span>I agree to the terms and conditions</span>
                 <button type="submit" class="submit-btn">Register</button>
             </form>
