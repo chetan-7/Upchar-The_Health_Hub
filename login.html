@@ -37,8 +37,8 @@
                 <input type="text" class="input-field" placeholder="Mobile number" required>
                 <input type="email" class="input-field" placeholder="Name" required>
                 <input type="email" class="input-field" placeholder="Email" required>
-                <input type="text" class="input-field" placeholder="Password" required>
-                <input type="text" class="input-field" placeholder="Re-enter Password" required>
+                <input type="text" id="password" class="input-field" placeholder="Password" required>
+                <input type="text" class="input-field" placeholder="Re-enter Password" oninput="check(this)" required>
                 <!--<select name="boolean" id="boolean">
                 			    <option value="Yes">Yes</option>
     							<option value="No">No</option>
@@ -63,6 +63,16 @@
             y.style.left = "450px";
             z.style.left = "0px";
         }
+    </script>
+    <script type="text/javascript">
+    	function check(input){
+    		if(input.value!=document.getElementById('password').value){
+    			input.setCustomValidity('Password not  Matching.');
+        } else {
+           
+            input.setCustomValidity('');
+        }
+    	}
     </script>
     
 </body>
